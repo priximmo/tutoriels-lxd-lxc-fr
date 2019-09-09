@@ -11,19 +11,23 @@
 sudo apt-get install lxd lxd-client
 ```
 
-puis configuration guidée : accès, mot de passe, stockage et réseau (bridge)
+<br>
+* configuration guidée : accès, mot de passe, stockage et réseau (bridge)
 
 ```
 sudo lxd init
 ```
 
-test : 
+<br>
+* test : 
 
 ```
 lxd list
 ```
 
-lancement d'un conteneur :
+<br>
+
+* lancement d'un conteneur :
 
 ```
 lxd launch alpine monconteneur
