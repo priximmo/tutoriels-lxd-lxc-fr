@@ -5,7 +5,7 @@
 
 
 <br>
-* outil de virutalisation linux, 2014 (docker 2013)
+* outil de virtualisation linux, 2014 (docker 2013)
 
 <br>
 * basé sur les linux containers

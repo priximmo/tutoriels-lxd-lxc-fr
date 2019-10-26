@@ -1,7 +1,7 @@
 %titles : LXC/LXD
 %author: xavki
 
-# LXC/LXD : Sommaire
+# LXC/LXD : installation
 
 
 <br>
@@ -22,7 +22,7 @@ sudo lxd init
 * test : 
 
 ```
-lxd list
+lxc list
 ```
 
 <br>
@@ -30,6 +30,6 @@ lxd list
 * lancement d'un conteneur :
 
 ```
-lxd launch alpine monconteneur
+lxc launch images:alpine/3.7 monconteneur
 ```
 

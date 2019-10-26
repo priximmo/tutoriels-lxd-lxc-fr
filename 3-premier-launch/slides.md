@@ -68,6 +68,6 @@ lxc exec monconteneur -- /bin/ash
 * lancer une commande depuis l'extérieur
 
 ```
-lxc execc monconteneur -- hostname
+lxc exec monconteneur -- hostname
 ```
 

@@ -35,6 +35,11 @@ lxc exec monginx -- apk update
 lxc exec monginx -- apk add monginx
 ```
 
+-----------------------------------------------------------------------
+
+# Nginx : configuration
+
+
 <br>
 * modification de la conf nginx
 
@@ -56,5 +61,5 @@ rc-update add nginx default
 
 ```
 lxc list #ip
-curl <ip
+curl <ip>
 ```
