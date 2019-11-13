@@ -1,15 +1,15 @@
 %titles: LXC/LXD
 %author: xavki
 
-# LXC/LXD : init --preseed
+# LXC/LXD Cluster : init --preseed
 
 <br>
 * lancer une installation standardisée
 
 ```
 config:
-  core.trust_password: sekret
-  core.https_address: 10.55.60.171:8443
+  core.trust_password: monpassword
+  core.https_address: 192.168.61.2:8443
   images.auto_update_interval: 15
 storage_pools:
 - name: default
@@ -41,6 +41,20 @@ cluster:
 
 ```
 cat <preseed-file> | lxd init --preseed
+```
+
+-----------------------------------------------------------------
+
+# Cluster
+
+* test accès distant : 
+
+```
+lxc remote add second 192.168.61.2:8443 --password xavki
+lxc launch images:alpine/3.10 monconteneur
+lxc list second:
+lxc launch second:e4e574b7c03a second:monconteneur2
+lxc remote remove second
 ```
 
 https://lxd.readthedocs.io/en/latest/clustering/
