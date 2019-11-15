@@ -8,30 +8,35 @@
 
 ```
 config:
-  core.trust_password: monpassword
-  core.https_address: 192.168.61.2:8443
-  images.auto_update_interval: 15
-storage_pools:
-- name: default
-  driver: dir
+  core.https_address: '[::]:8443'
+  core.trust_password: xavier
 networks:
-- name: lxdbr0
-  type: bridge
-  config:
-    ipv4.address: 192.168.100.14/24
-    ipv6.address: none
+- config:
+    ipv4.address: auto
+    ipv6.address: auto
+  description: ""
+  managed: false
+  name: lxdbr0
+  type: ""
+storage_pools:
+- config: {}
+  description: ""
+  name: default
+  driver: dir
 profiles:
-- name: default
+- config: {}
+  description: ""
   devices:
-    root:
-      path: /
-      pool: default
-      type: disk
     eth0:
       name: eth0
       nictype: bridged
       parent: lxdbr0
       type: nic
+    root:
+      path: /
+      pool: default
+      type: disk
+  name: default
 cluster:
   server_name: node1
   enabled: true

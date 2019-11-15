@@ -4,8 +4,70 @@
 # LXC/LXD : move storage
 
 <br>
+* migration sur un autre volume - astuce
 
-lxc stop container_name
-lxc move container_name temp_container_name -s new_storage_pool
-lxc move temp_container_name container_name
-lxc start container_name
+* impossible normalement (utilisation remote)
+
+* réorganisation
+
+* utilisation d'un conteneur intermédiaire
+
+* arrêt/relance du conteneur et manipulation
+
+<br>
+* lancement de la socket
+
+```
+lxc config edit
+config:
+  core.https_address: '[::]:8443'
+  core.trust_password: true
+```
+
+* ajout remote
+
+```
+lxc remote add replica 127.0.0.1:8443 --password monpassword
+```
+
+Rq: écoute sur tous les ports
+
+---------------------------------------------------------------
+
+# LXC/LXD : copy du conteneur
+
+
+* création conteneur
+
+```
+lxc image copy images:alpine/3.10 local: --alias myalpine
+lxc launch myalpine mycontainer
+```
+
+* création d'un storage
+
+```
+lxc storage create xavki_dir dir source=/home/vagrant/storage
+```
+
+* création d'un profile
+
+```
+lxc profile create xavki
+lxc profile edit xavki
+
+devices:
+  root:
+    path: /
+    pool: xavki_dir
+    type: disk
+```
+
+* Migration à froid
+
+```
+lxc stop mycontainer
+lxc copy replica:mycontainer mycontainerV2 -p xavki
+lxc storage show xavki_dir
+```
+
