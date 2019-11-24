@@ -1,4 +1,4 @@
-%titles : LXC/LXD
+%titles: LXC/LXD
 %author: xavki
 
 # LXC/LXD : Introduction
@@ -12,7 +12,7 @@
 
 * respect et utilisation OCI (Open Container Initiative)
 
-* au début utiliser par docker pour implémenter des conteneurs linux
+* au début utilisé par docker pour implémenter des conteneurs linux
 
 * analogie entre les commandes et principes : similitudes et mieux comprendre
 
