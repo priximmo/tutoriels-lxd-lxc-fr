@@ -1,0 +1,14 @@
+- name: test
+  hosts: all
+  become: yes
+  tasks:
+  - name: Create a started container
+    lxd_container:
+      name: antons-system-new
+      source:
+        type: image
+        mode: pull
+        server: https://images.linuxcontainers.org
+        protocol: lxd
+        alias: ubuntu/bionic/amd64
+      wait_for_ipv4_addresses: true
