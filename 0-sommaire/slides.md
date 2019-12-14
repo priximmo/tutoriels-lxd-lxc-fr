@@ -1,11 +1,11 @@
-%titles : LXC/LXD
+%titles: LXC/LXD
 %author: xavki
 
 # LXC/LXD : Sommaire
 
 
 <br>
-* 0 - Somamire
+* 0 - Sommaire
 
 <br>
 * 1 - Introduction
