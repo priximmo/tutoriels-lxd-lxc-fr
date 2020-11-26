@@ -5,12 +5,16 @@
 
 
 <br>
+
+
 * rappel : LXD spécifique aux images systèmes
 
 * ex : installation conteneur système > installation nginx
 
 
 <br>
+
+
 * OCI > utilisation d'images dans un format prédéfini
 
 * OCI > tirer une image d'un dépôt(s)
@@ -22,6 +26,8 @@
 # Les images
 
 <br>
+
+
 * lister les images présentes localement
 
 ```
@@ -29,6 +35,8 @@ lxc image list
 ```
 
 <br>
+
+
 * copie d'une image (docker pull...)
 
 ```
@@ -42,6 +50,8 @@ lxc image list
 
 
 <br>
+
+
 * même principe que docker on lance/run à partir d'une image
 
 ```
@@ -51,6 +61,8 @@ lxc list
 Rq : les infos utiles (ip)
 
 <br>
+
+
 ```
 lxc launch monalpine monconteneur
 ```
@@ -58,6 +70,8 @@ lxc launch monalpine monconteneur
 Rq : pas de "-d"
 
 <br>
+
+
 * se rendre dans un conteneur
 
 ```
@@ -65,6 +79,8 @@ lxc exec monconteneur -- /bin/ash
 ```
 
 <br>
+
+
 * lancer une commande depuis l'extérieur
 
 ```

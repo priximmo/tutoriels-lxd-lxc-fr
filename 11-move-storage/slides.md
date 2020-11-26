@@ -4,6 +4,8 @@
 # LXC/LXD : move storage
 
 <br>
+
+
 * migration sur un autre volume - astuce
 
 * impossible normalement (utilisation remote)
@@ -15,6 +17,8 @@
 * arrêt/relance du conteneur et manipulation
 
 <br>
+
+
 * lancement de la socket
 
 ```

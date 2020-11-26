@@ -4,6 +4,8 @@
 # LXC/LXD : images
 
 <br>
+
+
 * création d'une image à partir d'un conteneur
 
 ```
@@ -11,6 +13,8 @@ lxc publish monconteneur --force --alias monimage
 ```
 
 <br>
+
+
 * image export
 
 ```
@@ -19,6 +23,8 @@ tar -xzvf 2e4edbc84669ec313f4d61c3520cf40129cad623b2639614563351f6887b8fe4.tar.g
 ```
 
 <br>
+
+
 * contenu :
 			* templates
 			* rootfs

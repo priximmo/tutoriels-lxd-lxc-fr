@@ -4,6 +4,8 @@
 # LXC/LXD : module ansible
 
 <br>
+
+
 * attention module lxc n'est pas à jour (lxc<2.0)
 
 * utiliser le module lxd_container
@@ -22,6 +24,8 @@ service ssh restart
 
 
 <br>
+
+
 * édition du playbook
 
 ```
@@ -53,6 +57,8 @@ ansible-playbook -i "192.168.61.2," -u vagrant -k create.yml
 
 
 <br>
+
+
 * playbook
 
 ```

@@ -5,6 +5,8 @@
 
 <br>
 
+
+
 * lancement de l'initialisation :
 
 ```
@@ -36,6 +38,8 @@ Would you like a YAML "lxd init" preseed to be printed? (yes/no) [default=no]:
 
 
 <br>
+
+
 * liste des noeuds
 
 ```

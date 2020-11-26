@@ -5,9 +5,13 @@
 
 
 <br>
+
+
 * outil de virtualisation linux, 2014 (docker 2013)
 
 <br>
+
+
 * basé sur les linux containers
 
 * respect et utilisation OCI (Open Container Initiative)
@@ -35,6 +39,8 @@
 
 
 <br>
+
+
 * imbrication des process
 
 Docker > containerd (+ shim avant) > runC > linux containers (process + isolation cgroups namespaces...)
@@ -44,9 +50,13 @@ CRI-O > containerd > runC > ...
 Lxd > Lxc > ...
 
 <br>
+
+
 * dédié aux conteneurs système (debian, ubuntu, centos...)
 
 <br>
+
+
 * beaucoup de similarités dans les commandes et principes (OCI oblige)
 
 * des choses mieux aussi

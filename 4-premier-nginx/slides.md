@@ -4,12 +4,16 @@
 # LXC/LXD : premier nginx
 
 <br>
+
+
 * rappel : LXD spécifique aux images systèmes
 
 * ex : installation conteneur système > installation nginx
 
 
 <br>
+
+
 * OCI > utilisation d'images dans un format prédéfini
 
 * OCI > tirer une image d'un dépôt(s)
@@ -21,6 +25,8 @@
 # Nginx
 
 <br>
+
+
 * utilisation d'une alpine
 
 ```
@@ -28,6 +34,8 @@ lxc launch monalpine monginx
 ```
 
 <br>
+
+
 * installation de nginx en cli
 
 ```
@@ -41,6 +49,8 @@ lxc exec monginx -- apk add monginx
 
 
 <br>
+
+
 * modification de la conf nginx
 
 ```
@@ -57,6 +67,8 @@ rc-update add nginx default
 ```
 
 <br>
+
+
 * test
 
 ```

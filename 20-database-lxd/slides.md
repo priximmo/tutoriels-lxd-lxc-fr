@@ -4,10 +4,14 @@
 # LXC/LXD : la database
 
 <br>
+
+
 https://blog.nanjj.cn/lxd.html
 * lxd dispose d'une base sqlite
 
 <br>
+
+
 
 * deux types de schémas : 
 		* local : accessible uniquement depuis le noeud
@@ -31,6 +35,8 @@ lxd sql local .schema
 
 
 <br>
+
+
 * liste des conteneurs
 
 ```
@@ -39,6 +45,8 @@ lxd sql global 'select * from containers;'
 
 
 <br>
+
+
 * liste des images
 
 ```
@@ -46,6 +54,8 @@ lxd sql global 'select * from images;'
 ```
 
 <br>
+
+
 * liste des profiles
 
 ```
@@ -53,6 +63,8 @@ lxd sql global 'select * from profiles;'
 ```
 
 <br>
+
+
 * liste des configs de profiles
 
 ```

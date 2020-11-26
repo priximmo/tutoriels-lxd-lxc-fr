@@ -5,6 +5,8 @@
 
 
 <br>
+
+
 * installation facile
 
 ```
@@ -12,6 +14,8 @@ sudo apt-get install lxd lxd-client
 ```
 
 <br>
+
+
 * configuration guidée : accès, mot de passe, stockage et réseau (bridge)
 
 ```
@@ -19,6 +23,8 @@ sudo lxd init
 ```
 
 <br>
+
+
 * test : 
 
 ```
@@ -26,6 +32,8 @@ lxc list
 ```
 
 <br>
+
+
 
 * lancement d'un conteneur :
 

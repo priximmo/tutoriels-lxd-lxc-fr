@@ -4,14 +4,20 @@
 # LXC/LXD : remote
 
 <br>
+
+
 * accès distant (idem docker)
 
 <br>
+
+
 * pour :
 		* commandes à distance
 		* copier des images distantes (comme un dépôt)
 
 <br>
+
+
 * configuration du lxc distant
 
 ```
@@ -27,6 +33,8 @@ config:
 
 
 <br>
+
+
 * ajout d'un remote 
 
 ```
@@ -34,6 +42,8 @@ lxc remote add second 192.168.61.2:8443 --password xavki
 ```
 
 <br>
+
+
 * utilisation
 
 ```
@@ -49,6 +59,8 @@ Rq : ne pas oublier les ":"
 
 
 <br>
+
+
 * transfert d'une image
 
 ```

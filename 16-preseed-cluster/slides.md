@@ -4,6 +4,8 @@
 # LXC/LXD Cluster : init --preseed
 
 <br>
+
+
 * lancer une installation standardisée
 
 ```

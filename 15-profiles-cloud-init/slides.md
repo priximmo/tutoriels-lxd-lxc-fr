@@ -4,11 +4,15 @@
 # LXC/LXD Profile et cloud-init suites...
 
 <br>
+
+
 * vidéo 14 = config > config de conteneur
 
 * profile = configuration apr défaut de conteneur (modèle)
 
 <br>
+
+
 * pb init de conteneur puis start
 
 * profile >> appliquer une même instanciation
@@ -25,6 +29,8 @@ lxc image copy images:ubuntu/18.04 local: --alias ubuntu:18.04
 
 
 <br>
+
+
 * création d'un profile
 
 ```
@@ -35,6 +41,8 @@ lxc profile edit myprofile
 Rq : préférez l'injection de fichier (traces)
 
 <br>
+
+
 * édition de fichier
 
 ```
@@ -61,6 +69,8 @@ write_files:
 # Profile et cloud-init
 
 <br>
+
+
 * injection dans le profile
 
 ```
@@ -68,6 +78,8 @@ lxc profile set myprofile user.user-data - < preconf.yml
 ```
 
 <br>
+
+
 * lancement du conteneur
 
 ```

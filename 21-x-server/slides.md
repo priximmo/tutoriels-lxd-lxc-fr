@@ -4,6 +4,8 @@
 # LXC/LXD : GUI - ex : Firefox
 
 <br>
+
+
 * mapping de votre user dans le conteneur
 
 ```
@@ -11,6 +13,8 @@ echo "root:$UID:1" | sudo tee -a /etc/subuid /etc/subgid
 ```
 
 <br>
+
+
 * création d'un profil lxc
 
 ```

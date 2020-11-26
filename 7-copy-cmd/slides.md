@@ -4,12 +4,16 @@
 # LXC/LXD : Copy containers / Publish
 
 <br>
+
+
 * 2 méthodes :
 			* copy : copier/coller de conteneur
 			* publish : création d'une image puis lancement
 
 
 <br>
+
+
 * méthode COPY (sans arrêt de la source)
 
 ```
@@ -18,6 +22,8 @@ lxc start <conteneur_destination>
 ```
 
 <br>
+
+
 * méthode PUBLISH (création d'image mais arrêt source)
 
 ```

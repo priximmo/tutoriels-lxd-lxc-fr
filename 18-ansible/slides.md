@@ -4,6 +4,8 @@
 # LXC/LXD : ansible et profile
 
 <br>
+
+
 * cloud init : la bonne conf
 
 ```

@@ -4,11 +4,15 @@
 # LXC/LXD Profiles
 
 <br>
+
+
 * profile = configurations par défaut pour container
 
 * config = une sous partie (cloud init)
 
 <br>
+
+
 * profile default
 
 ```
@@ -19,6 +23,8 @@ lxc profile show myprofile
 ```
 
 <br>
+
+
 * deux modes : 
 			* CLI
 			* fichier de configuration
@@ -30,6 +36,8 @@ lxc profile show myprofile
 
 
 <br>
+
+
 * CLI - exemple
 
 ```
@@ -39,6 +47,8 @@ launch myalpine mycontainer -c security.privileged=true
 Rq : https://lxd.readthedocs.io/en/latest/containers/
 
 <br>
+
+
 * CLI - check/ config
 
 ```
@@ -51,6 +61,8 @@ lxc config edit mycontainer
 
 
 <br>
+
+
 * création d'un conteneur
 
 ```
@@ -58,6 +70,8 @@ lxc init ubuntu: mycontainer
 ```
 
 <br>
+
+
 * fichier config.yml
 
 ```
@@ -75,6 +89,8 @@ write_files:
 ```
 
 <br>
+
+
 * édition de sa configuration
 
 ```

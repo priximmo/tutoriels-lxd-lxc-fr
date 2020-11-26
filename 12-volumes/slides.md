@@ -4,6 +4,8 @@
 # LXC/LXD : Volumes
 
 <br>
+
+
 * storage : réservation directory sur le host
 		* notamment utilisé sur la création de conteneur
 
@@ -45,6 +47,8 @@ lxc storage volume list xavki_dir
 
 
 <br>
+
+
 * création d'un volume dans un storage
 
 ```
@@ -53,6 +57,8 @@ lxc storage volume list xavki_dir
 ```
 
 <br>
+
+
 * attachement du volume
 
 ```

@@ -4,6 +4,8 @@
 # LXC/LXD : storage
 
 <br>
+
+
 * stockage simple et facile à consulter (diff docker)
 
 * différents types :
@@ -24,6 +26,8 @@
 
 
 <br>
+
+
 * liste des pools de stockage
 
 ```
@@ -31,6 +35,8 @@ lxc storage list
 ```
 
 <br>
+
+
 * détail sur un stockage
 
 ```
@@ -38,6 +44,8 @@ lxc storage show xavki_dir
 ```
 
 <br>
+
+
 * création d'un pool
 
 ```
@@ -50,6 +58,8 @@ lxc storage create xavki_dir dir source=/home/oki/storage
 
 
 <br>
+
+
 * création d'un conteneur sur un pool
 
 ```
@@ -57,6 +67,8 @@ lxc launch monalpine storeconteneur -s xavki_dir
 ```
 
 <br>
+
+
 * suppression d'un conteneur
 
 ```
